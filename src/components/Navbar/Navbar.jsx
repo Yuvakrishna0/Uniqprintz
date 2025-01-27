@@ -7,7 +7,7 @@ import prof from '../assets/profile-icon.png'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-  const[menu, setMenu] = React.useState("home")
+  const[menu, setMenu] = React.useState("Home")
   return (
     <div className="navbar">
       <div className="logo">
@@ -16,7 +16,7 @@ const Navbar = () => {
       </div>
     
         <ul className="nav-items">
-          <li onClick={()=>{setMenu("home")}}><Link to='/' style={{textDecoration:'none'}}>Home</Link>{menu==="home"?<hr/>:<></>}</li>
+          <li onClick={()=>{setMenu('Home')}}><Link to='/'  style={{textDecoration:'none'}}>Home</Link>{menu==="Home"?<hr/>:<></>}</li>
           <li onClick={()=>{setMenu("shop")}}><Link to='/shop'style={{textDecoration:'none'}}>Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
           <li onClick={()=>{setMenu("contact")}}><Link to='/contactus'style={{textDecoration:'none'}}>Contact Us</Link>{menu==="contact"?<hr/>:<></>}</li>
           <li onClick={()=>{setMenu("orders")}}><Link to='/myorders'style={{textDecoration:'none'}}>My Orders</Link>{menu==="orders"?<hr/>:<></>}</li>
