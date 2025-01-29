@@ -1,0 +1,24 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    height:90vh;
+}
+.home p{
+    font-size: 30px;
+    font-weight: 700;
+}
+.home hr{
+    width:200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+.home-items{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 50px;
+}

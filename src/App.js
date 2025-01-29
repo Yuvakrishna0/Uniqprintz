@@ -12,7 +12,6 @@ function App() {
       <Route path="/shop" element={<shop/>} />
       <Route path="/shopcategory" element={<shopcategory/>} />
       <Route path="/loginsignup" element={<loginsignup/>} />
-      <Route path="/contactus" element={<contactus/>} />
       <Route path="/myorders" element={<myorders/>} />
       <Route path="/product" element={<product/>}>
       <Route path=':productId' element={<product/>}/>

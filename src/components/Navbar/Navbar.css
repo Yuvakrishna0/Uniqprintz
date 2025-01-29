@@ -1,7 +1,7 @@
 .navbar{
  display: flex;
- justify-content: space-around;
- padding: 20px;
+ justify-content: space-evenly;
+ padding: 10px;
  box-shadow: 0 1px 3px -2px #000;   
 }
 .logo{
@@ -10,13 +10,14 @@
     align-items: center;
 }
 .logo p{
-    font-size: 32px;
+    font-family: poppins;
+    font-size: 28px;
     font-weight: 600;
     color: #171717;
 
 }
 #logo-icon{
-    height: 120px
+    height: 90px
 }
 .login-cart-profile > img{
     cursor: pointer;
@@ -79,3 +80,37 @@
     color: white;
 
 }
+/* Add this to your CSS file */
+.search-bar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 10px 1rem;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    height: 20px;
+    width: 350px;
+    padding-right: 40px;
+  }
+  
+  .search-bar button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .search-bar button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .search-bar button:hover {
+    background-color: #dedede;
+  }
