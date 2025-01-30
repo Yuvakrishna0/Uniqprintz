@@ -14,6 +14,10 @@ const Item = (props) => {
             <div className='old-price'>
             <p>₹{props.old_price}</p>
             </div>
+            <div className='size'>
+              <p>size:</p>
+            <p>{props.size}</p>
+            </div>
           </div>
         </div>
       </div>

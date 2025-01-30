@@ -1,0 +1,56 @@
+.category-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .category-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 10; /* Keeps the category bar above other content */
+  }
+  
+  .category-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position it right below the category bar */
+    left: 0;
+    right: 0;
+    background-color: #444;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 20; /* Make sure the dropdown is on top of everything else */
+  }
+  
+  .category-bar:hover .dropdown-menu {
+    display: block;
+    opacity: 1; /* Show the dropdown on hover */
+  }
+  
+  .dropdown-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-menu ul li {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu ul li:hover {
+    background-color: #555;
+  }
+  

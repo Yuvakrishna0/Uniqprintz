@@ -7,7 +7,7 @@ const homeitems = [
   {
     id: 1,
     name: "Poster",
-    size: "24 x 36 inches",
+    size: "24 x 36 in",
     image: p1_img,
     new_price: 20.0,
     old_price: 30.0,
@@ -15,7 +15,7 @@ const homeitems = [
   {
     id: 2,
     name: "Flyer",
-    size: "8.5 x 11 inches",
+    size: "8.5 x 11 in",
     image: p2_img,
     new_price: 15.0,
     old_price: 25.0,
@@ -23,7 +23,7 @@ const homeitems = [
   {
     id: 3,
     name: "Brochure",
-    size: "8.5 x 11 inches",
+    size: "8.5 x 11 in",
     image: p3_img,
     new_price: 60.0,
     old_price: 100.5,

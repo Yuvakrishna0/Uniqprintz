@@ -2,7 +2,6 @@ import React from 'react'
 import './Navbar.css'
 import logo from '../assets/logo.jpg'
 import cart from '../assets/cart.png'
-import fav from '../assets/favourite-icon.png'
 import prof from '../assets/profile-icon.png'
 import { Link } from 'react-router-dom'
 import homo from '../assets/home_icon.png'
@@ -54,7 +53,6 @@ const Navbar = () => {
         
       <Link to='/cart'><img src={cart}width="32px" alt="cart" /></Link>
         <div className="login-cart-count">0</div>
-        <Link to='/favourites'><img src={fav} width="32px" alt="favourite" /></Link>
         <Link to='/login'><button>Login</button></Link>
         <Link to='/profile'><img src={prof} width="32px" alt="profile" /></Link>
         

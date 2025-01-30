@@ -9,15 +9,21 @@
     display: flex;
     align-items: center;
 }
+
+  
 .logo p{
-    font-family: poppins;
-    font-size: 28px;
-    font-weight: 600;
+    font-family: "Anek Bangla";
+    font-size: 32px;
+    font-optical-sizing: auto;
+    
+    font-weight: 500;
+    font-style: normal;
     color: #171717;
+    
 
 }
 #logo-icon{
-    height: 90px
+    height: 100px
 }
 .login-cart-profile > img{
     cursor: pointer;
