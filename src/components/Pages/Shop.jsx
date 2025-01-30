@@ -5,8 +5,9 @@ import Category from '../Category/Category'
 const Shop = () => {
   return (
     <div>
-      <Category/>
-    
+ 
+    <Category/>
+   
     </div>
   )
 }

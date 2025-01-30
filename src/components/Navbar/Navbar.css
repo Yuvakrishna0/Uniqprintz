@@ -99,7 +99,7 @@
     border: 1px solid #000000;
     border-radius: 20px;
     margin-right: 0.5rem;
-    height: 20px;
+    height: 40px;
     width: 350px;
     padding-right: 40px;
   }
@@ -118,5 +118,5 @@
   }
   
   .search-bar button:hover {
-    background-color: #dedede;
+    cursor: pointer;
   }

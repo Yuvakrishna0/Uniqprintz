@@ -1,14 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
 .hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Create 2 columns of equal width */
   gap: 16px; /* Space between grid items */
   width: 100%; /* Make the grid cover the full width of the page */
+  max-width: 100%; /* Prevent container overflow */
   padding: 16px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .grid-item {
   position: relative; /* Position context for the overlay */
   width: 100%; /* Ensure the item takes full column width */
+  min-width: 0; /* Prevent grid items from overflowing */
   aspect-ratio: 1; /* Maintain square layout */
   overflow: hidden; /* Prevent content overflow */
   border-radius: 10px; /* Optional: Rounded corners */
