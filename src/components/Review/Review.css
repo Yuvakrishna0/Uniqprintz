@@ -1,0 +1,104 @@
+/* Review Container */
+.review-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Title */
+  .review-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Review Form */
+  .review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .review-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .review-input:focus {
+    border-color: #00bcd4;
+  }
+  
+  /* Submit Button */
+  .review-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .review-button:hover {
+    background-color: #008c9e;
+  }
+  
+  /* Review List */
+  .review-list {
+    margin-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .review-item {
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .review-item p {
+    margin: 0;
+  }
+  
+  .review-item button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .review-item button:hover {
+    background-color: #ff1a1a;
+  }
+  
+  .no-reviews {
+    color: #888;
+    text-align: center;
+    font-style: italic;
+  }

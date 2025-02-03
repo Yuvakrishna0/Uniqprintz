@@ -32,7 +32,7 @@ import p31_img from "./product_31.jpg";
 import p32_img from "./product_32.jpg";
 
 
-let all_product = [
+const all_product = [
   {
     id: 1,
     name: "Letterheads",

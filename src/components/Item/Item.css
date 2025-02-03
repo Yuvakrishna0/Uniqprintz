@@ -1,35 +1,115 @@
-.item{
-    width:350px;
-
-}
-.item p{
-    margin: 6px 0px;
-}
-.item-price{
-display: flex ;
-gap: 20px;
-}
-.new-price{
-    font-size: 18px;
-    color: rgb(0, 1, 1);
-    font-weight: 800;
-
-}
-.old-price{
-    font-size: 18px;
-    color: rgb(95, 82, 82);
-    font-weight: 800;
+/* Styling for individual item cards */
+.item {
+    width: 350px;
+    height: 450px; /* Fixed height */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute the content evenly */
+  }
+  
+  .item:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  /* Styling for the image */
+  .item img {
+    width: 100%;
+    height: 250px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the area without distorting */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+  }
+  
+  /* Title of the item */
+  .item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Description for the item */
+  .item p {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 0 10px;
+    margin: 6px 0;
+    text-align: center;
+  }
+  
+  /* Container for price with two prices */
+  .item-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 0 10px;
+  }
+  
+  /* New price styling */
+  .new-price {
+    font-size: 1.2rem;
+    color: #00bcd4; /* Accent color */
+    font-weight: 700;
+  }
+  
+  /* Old price styling */
+  .old-price {
+    font-size: 1rem;
+    color: #888;
+    font-weight: 400;
     text-decoration: line-through;
-}
-.item:hover{
-    transform: scale(1.05);
-    transition: 0.6s;
-}
-.item img{
-    width: 200px;
-    height: 200px;
-}
-.size p{
-    
+  }
+  
+  /* Size description */
+  .size p {
     font-size: 12px;
-}
+    color: #888;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Container to display multiple items */
+  .item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Media Query for responsiveness */
+  @media (max-width: 768px) {
+    .item {
+      width: 300px; /* Adjust width for smaller screens */
+      height: 400px; /* Adjust height */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .item {
+      width: 90%; /* Take up most of the width on very small screens */
+      height: 380px;
+    }
+  
+    .item-price {
+      gap: 10px;
+    }
+  
+    .new-price {
+      font-size: 1.1rem; /* Adjust font size for mobile */
+    }
+  
+    .old-price {
+      font-size: 1rem;
+    }
+  }
+  
